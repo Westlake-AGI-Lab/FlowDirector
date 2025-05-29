@@ -1,6 +1,6 @@
 <p align="center">
 
-  <h2 align="center">FlowDirector: Training-Free Flow Steering for Precise Text-to-Video Editing</h2>
+  <h1 align="center">FlowDirector: Training-Free Flow Steering for Precise Text-to-Video Editing</h1>
   <p align="center">
     <a href="https://guangzhaoli.github.io/"><strong>Guangzhao Li</strong></a>
     ·
@@ -103,24 +103,24 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Large Brown Bear
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="./assets/demos/bear_g.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/bear_g_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/bear_g_03.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="./assets/demos/bear_g.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/bear_g_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/bear_g_03.gif" width="300px"></td>
     </tr>
     <tr>
-      <td style="text-align:center;">large brown bear</td>
-      <td style="text-align:center;">large panda</td>
-      <td style="text-align:center;">large dinosaur</td>
+      <td style="text-align:center;" width="33%">large brown bear</td>
+      <td style="text-align:center;" width="33%">large panda</td>
+      <td style="text-align:center;" width="33%">large dinosaur</td>
     </tr>
   </tbody>
 </table>
@@ -131,16 +131,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/rabbit.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/rabbit_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/rabbit_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/rabbit.gif"  width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/rabbit_01.gif"  width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/rabbit_02.gif"  width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">rabbit</td>
@@ -156,16 +156,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/blackswan.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/blackswan_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/blackswan_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/blackswan.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/blackswan_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/blackswan_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">black swan</td>
@@ -181,16 +181,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/woman.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/woman_02.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/woman_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/woman.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/woman_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/woman_01.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">woman in a black dress</td>
@@ -206,16 +206,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/jeep.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/jeep_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/jeep_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/jeep.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/jeep_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/jeep_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">silver jeep</td>
@@ -231,16 +231,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/dog_flower_g.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">holding a flower</td>
@@ -256,16 +256,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/cat_box.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/cat_box_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/cat_box_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cat_box.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cat_box_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cat_box_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">cats</td>
@@ -281,16 +281,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/wolf.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/wolf_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/wolf_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/wolf.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/wolf_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/wolf_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">wolf</td>
@@ -306,16 +306,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/sea_turtle.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/sea_turtle_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/sea_turtle_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">sea turtle</td>
@@ -331,16 +331,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/sea_lion.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/sea_lion_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/sea_lion_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">sea lion</td>
@@ -356,16 +356,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/gym_woman.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/gym_woman_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="./assets/demos/gym_woman_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/gym_woman.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/gym_woman_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="./assets/demos/gym_woman_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">woman</td>
@@ -381,16 +381,16 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/cockatiel.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/cockatiel_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/cockatiel_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">red cockatiel</td>
@@ -403,19 +403,19 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Puppy
 
-<table style="width:95%;"
+<table style="width:95%;">
   <thead>
     <tr>
-      <th style="text-align:center;">Original Video (Source Keyword)</th>
-      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
-      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/puppy.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/puppy_01.gif" width="150px"></td>
-      <td style="text-align:center;"><img src="assets/demos/puppy_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/puppy.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/puppy_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/puppy_02.gif" width="300px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">puppy</td>
@@ -424,6 +424,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
     </tr>
   </tbody>
 </table>
+
 
 ---
 
