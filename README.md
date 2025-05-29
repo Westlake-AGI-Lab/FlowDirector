@@ -16,7 +16,7 @@
   </p>
 
 <p align="center">
-  <img src="assets/teaser_new_03.png" width="95%" alt="FlowDirector Teaser Results"/>
+  <img src="assets/teaser_new_03.png" width="100%" alt="FlowDirector Teaser Results"/>
   <br>
   <em>FlowDirector edits videos based on text prompts, preserving unedited regions and maintaining temporal coherence.</em>
 </p>
@@ -128,7 +128,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Rabbit
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td width="33%" style="text-align:center;">Original Video (Source Keyword)</th>
@@ -153,7 +153,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Black Swan
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -178,7 +178,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Woman in a black dress
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -203,7 +203,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Silver Jeep
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -228,7 +228,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Holding a flower
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -253,7 +253,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Cats
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -278,7 +278,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Wolf
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -303,7 +303,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Sea Turtle
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -328,7 +328,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Sea Lion
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -353,7 +353,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Woman (Gym)
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -378,7 +378,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Red Cockatiel
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
@@ -403,7 +403,7 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 ---
 #### Original Subject: Puppy
 
-<table style="width:95%;">
+<table style="width:100%;">
   <thead>
     <tr>
       <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
