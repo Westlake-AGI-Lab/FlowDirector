@@ -113,9 +113,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="./assets/demos/bear_g.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/bear_g_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/bear_g_03.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="./assets/demos/bear_g.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/bear_g_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/bear_g_03.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;" width="33%">large brown bear</td>
@@ -138,9 +138,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/rabbit.gif"  width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/rabbit_01.gif"  width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/rabbit_02.gif"  width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/rabbit.gif"  width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/rabbit_01.gif"  width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/rabbit_02.gif"  width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">rabbit</td>
@@ -163,9 +163,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/blackswan.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/blackswan_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/blackswan_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/blackswan.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/blackswan_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/blackswan_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">black swan</td>
@@ -188,9 +188,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/woman.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/woman_02.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/woman_01.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/woman.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/woman_02.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/woman_01.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">woman in a black dress</td>
@@ -213,9 +213,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/jeep.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/jeep_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/jeep_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/jeep.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/jeep_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/jeep_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">silver jeep</td>
@@ -238,9 +238,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/dog_flower_g.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">holding a flower</td>
@@ -263,9 +263,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/cat_box.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/cat_box_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/cat_box_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cat_box.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cat_box_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cat_box_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">cats</td>
@@ -288,9 +288,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/wolf.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/wolf_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/wolf_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/wolf.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/wolf_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/wolf_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">wolf</td>
@@ -313,9 +313,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/sea_turtle.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/sea_turtle_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/sea_turtle_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">sea turtle</td>
@@ -338,9 +338,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/sea_lion.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/sea_lion_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/sea_lion_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">sea lion</td>
@@ -363,9 +363,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/gym_woman.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/gym_woman_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="./assets/demos/gym_woman_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/gym_woman.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/gym_woman_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="./assets/demos/gym_woman_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">woman</td>
@@ -388,9 +388,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/cockatiel.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/cockatiel_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/cockatiel_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">red cockatiel</td>
@@ -413,9 +413,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;"><img src="assets/demos/puppy.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/puppy_01.gif" width="300px"></td>
-      <td style="text-align:center;"><img src="assets/demos/puppy_02.gif" width="300px"></td>
+      <td style="text-align:center;"><img src="assets/demos/puppy.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/puppy_01.gif" width="450px"></td>
+      <td style="text-align:center;"><img src="assets/demos/puppy_02.gif" width="450px"></td>
     </tr>
     <tr>
       <td style="text-align:center;">puppy</td>
