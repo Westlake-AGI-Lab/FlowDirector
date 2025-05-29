@@ -2,13 +2,13 @@
 
   <h1 align="center">FlowDirector: Training-Free Flow Steering for Precise Text-to-Video Editing</h1>
   <p align="center">
-    <a href="https://guangzhaoli.github.io/"><strong>Guangzhao Li</strong></a>
+    <a href="guangzhaoli@csu.edu.cn"><strong>Guangzhao Li</strong></a>
     ·
-    <a href="https://ycgu.site/"><strong>Yanming Yang</strong></a>
+    <a href="yangyanming@westlake.edu.cn"><strong>Yanming Yang</strong></a>
     ·
-    <a href="https://zhangjiewu.github.io/"><strong>Chenxi Song</strong></a>
+    <a href="songchenxi@westlake.edu.cn"><strong>Chenxi Song</strong></a>
     ·
-    <a href="https://junhaozhang98.github.io//"><strong>Chi Zhang</strong></a>    <br>
+    <a href="chizhang@westlake.edu.cn"><strong>Chi Zhang</strong></a>    <br>
     <br>
         <a href="https://arxiv.org/abs/0000.00000"><img src='https://img.shields.io/badge/arXiv-0000.00000-b31b1b.svg'></a>
         <a href='https://guangzhaoli.github.io/FlowDirector'><img src='https://img.shields.io/badge/Project_Page-FlowDirector-blue'></a>
