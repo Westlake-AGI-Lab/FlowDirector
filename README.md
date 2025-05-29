@@ -118,9 +118,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
       <td style="text-align:center;"><img src="assets/demos/bear_g_03.gif" width="100%"></td>
     </tr>
     <tr>
-      <td style="text-align:center;" width="33%">large brown bear</td>
-      <td style="text-align:center;" width="33%">large panda</td>
-      <td style="text-align:center;" width="33%">large dinosaur</td>
+      <td style="text-align:center;" width="100%">large brown bear</td>
+      <td style="text-align:center;" width="100%">large panda</td>
+      <td style="text-align:center;" width="100%">large dinosaur</td>
     </tr>
   </tbody>
 </table>
