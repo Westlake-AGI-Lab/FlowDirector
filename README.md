@@ -16,7 +16,7 @@
   </p>
 
 <p align="center">
-  <img src="assets/figure1_teaser.png" width="90%" alt="FlowDirector Teaser Results"/>
+  <img src="assets/teaser_new_03.png" width="95%" alt="FlowDirector Teaser Results"/>
   <br>
   <em>FlowDirector edits videos based on text prompts, preserving unedited regions and maintaining temporal coherence.</em>
 </p>
@@ -96,26 +96,337 @@ For detailed parameter explanations, please refer to the `edit.py` file.
 
 ---
 
-## 🎬 Demos
+## 🎬 FlowDirector Editing Demos
 
-FlowDirector achieves superior results across various editing tasks:
-
-<p align="center">
-  <img src="assets/figure3_qualitative.png" width="90%" alt="More Qualitative Results"/>
-  <br>
-  <em>Figure 3: Examples of object editing, texture transformation, and attribute modification. (Replace with your actual Figure 3 or a GIF)</em>
-</p>
-
-<p align="center">
-  <img src="assets/figure4_comparison.png" width="90%" alt="Comparison with SOTA"/>
-  <br>
-  <em>Figure 4: Comparison with other state-of-the-art video editing methods. (Replace with your actual Figure 4 or a GIF)</em>
-</p>
-
-For detailed quantitative comparisons and more visual examples, please refer to our [paper](https://arxiv.org/abs/2310.08465) (Note: ArXiv ID 2310.08465 is already linked above, replace if this is a different paper) and its supplementary material.
-
+FlowDirector achieves superior results across various editing tasks. Below are specific demonstrations:
 
 ---
+#### Original Subject: Large Brown Bear
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="./assets/demos/bear_g.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/bear_g_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/bear_g_03.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">large brown bear</td>
+      <td style="text-align:center;">large panda</td>
+      <td style="text-align:center;">large dinosaur</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Rabbit
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/rabbit.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/rabbit_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/rabbit_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">rabbit</td>
+      <td style="text-align:center;">Crochet rabbit</td>
+      <td style="text-align:center;">Origami rabbit</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Black Swan
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/blackswan.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/blackswan_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/blackswan_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">black swan</td>
+      <td style="text-align:center;">pink flamingo</td>
+      <td style="text-align:center;">white duck</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Woman in a black dress
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/woman.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/woman_02.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/woman_01.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">woman in a black dress</td>
+      <td style="text-align:center;">a red baseball cap</td>
+      <td style="text-align:center;">woman in a blue shirt and jeans</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Silver Jeep
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/jeep.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/jeep_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/jeep_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">silver jeep</td>
+      <td style="text-align:center;">Porsche car</td>
+      <td style="text-align:center;">Tractor</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Holding a flower
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/dog_flower_g_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">holding a flower</td>
+      <td style="text-align:center;"><del>holding a flower</del></td>
+      <td style="text-align:center;">A golden retriever with a colorful collar</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Cats
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/cat_box.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cat_box_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cat_box_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">cats</td>
+      <td style="text-align:center;">dogs</td>
+      <td style="text-align:center;">kangaroo</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Wolf
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/wolf.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/wolf_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/wolf_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">wolf</td>
+      <td style="text-align:center;">fox</td>
+      <td style="text-align:center;">husky</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Sea Turtle
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_turtle_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">sea turtle</td>
+      <td style="text-align:center;">dolphin</td>
+      <td style="text-align:center;">seal</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Sea Lion
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/sea_lion_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">sea lion</td>
+      <td style="text-align:center;">Seahorse</td>
+      <td style="text-align:center;">Clownfish</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Woman (Gym)
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/gym_woman.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/gym_woman_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="./assets/demos/gym_woman_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">woman</td>
+      <td style="text-align:center;">chimpanzee</td>
+      <td style="text-align:center;">Spider-Man</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Red Cockatiel
+
+<table style="width:95%;">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/cockatiel_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">red cockatiel</td>
+      <td style="text-align:center;">blue budgie</td>
+      <td style="text-align:center;">eagle</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+#### Original Subject: Puppy
+
+<table style="width:95%;"
+  <thead>
+    <tr>
+      <th style="text-align:center;">Original Video (Source Keyword)</th>
+      <th style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <th style="text-align:center;">Edited Video 2 (Target Keyword)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;"><img src="assets/demos/puppy.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/puppy_01.gif" width="150px"></td>
+      <td style="text-align:center;"><img src="assets/demos/puppy_02.gif" width="150px"></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">puppy</td>
+      <td style="text-align:center;">chinchilla</td>
+      <td style="text-align:center;">cat</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
 
 ## 📜 Citation
 
