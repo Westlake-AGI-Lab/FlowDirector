@@ -10,9 +10,9 @@
     ·
     <a href="https://junhaozhang98.github.io//"><strong>Chi Zhang</strong></a>    <br>
     <br>
-        <a href="https://arxiv.org/abs/2310.08465"><img src='https://img.shields.io/badge/arXiv-2310.08465-b31b1b.svg'></a>
-        <a href='https://showlab.github.io/MotionDirector'><img src='https://img.shields.io/badge/Project_Page-MotionDirector-blue'></a>
-        <a href='https://huggingface.co/spaces/ruizhaocv/MotionDirector'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow'></a>
+        <a href="https://arxiv.org/abs/0000.00000"><img src='https://img.shields.io/badge/arXiv-0000.00000-b31b1b.svg'></a>
+        <a href='https://guangzhaoli.github.io/FlowDirector'><img src='https://img.shields.io/badge/Project_Page-FlowDirector-blue'></a>
+        <a href='https://huggingface.co/spaces/guangzhaoli/FlowDirector'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow'></a>
   </p>
 
 <p align="center">
@@ -21,6 +21,20 @@
   <em>FlowDirector edits videos based on text prompts, preserving unedited regions and maintaining temporal coherence.</em>
 </p>
 
+
+---
+
+
+## 📄 Abstract
+
+**TL;DR:** Here, we propose FlowDirector, a training- and inversion-free framework for text-guided video editing, enabling precise object edits and temporal consistency through new spatial correction and guidance mechanisms.
+
+<details>
+<summary>Click to read the full Abstract</summary>
+
+> Text-driven video editing aims to modify video content according to natural language instructions. While recent training-free approaches have made progress by leveraging pre-trained diffusion models, they typically rely on inversion-based techniques that map input videos into the latent space, which often leads to temporal inconsistencies and degraded structural fidelity. To address this, we propose FlowDirector, a novel inversion-free video editing framework. Our framework models the editing process as a direct evolution in data space, guiding the video via an Ordinary Differential Equation (ODE) to smoothly transition along its inherent spatiotemporal manifold, thereby preserving temporal coherence and structural details. To achieve localized and controllable edits, we introduce an attention-guided masking mechanism that modulates the ODE velocity field, preserving non-target regions both spatially and temporally. Furthermore, to address incomplete edits and enhance semantic alignment with editing instructions, we present a guidance-enhanced editing strategy inspired by Classifier-Free Guidance, which leverages differential signals between multiple candidate flows to steer the editing trajectory toward stronger semantic alignment without compromising structural consistency. Extensive experiments across benchmarks demonstrate that FlowDirector achieves state-of-the-art performance in instruction adherence, temporal consistency, and background preservation, establishing a new paradigm for efficient and coherent video editing without inversion.
+
+</details>
 
 ---
 
@@ -36,15 +50,15 @@
 
 ## 🔥 News
 
-*   [Date] - News item 1...
-*   [Date] - News item 2...
+- [2023.05.30] FlowDirector is released! Check out the code and demos.
+- [2025.05.29] Paper and project page released.
 
 ---
 
 ## 📑 ToDo
 
-*   [ ] Task 1
-*   [ ] Task 2
+- [x] Release the code
+- [ ] Gradio demo
 
 ---
 
