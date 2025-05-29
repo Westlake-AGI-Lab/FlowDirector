@@ -100,7 +100,7 @@ bash script_edit_single_gpu.sh
 
 ### Multi-GPU Editing (using `torchrun`)
 
-For multi-GPU editing (e.g., 4 GPUs):
+For multi-GPU editing (e.g., 4 GPUs), run the following command:
 
 ```bash
 bash script_edit_multi_gpu.sh
