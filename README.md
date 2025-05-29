@@ -106,9 +106,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:100%;">
   <thead>
     <tr>
-      <td style="text-align:center;" width="100%">Original Video (Source Keyword)</th>
-      <td style="text-align:center;" width="100%">Edited Video 1 (Target Keyword)</th>
-      <td style="text-align:center;" width="100%">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
@@ -118,9 +118,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
       <td style="text-align:center;"><img src="assets/demos/bear_g_03.gif" width="100%"></td>
     </tr>
     <tr>
-      <td style="text-align:center;" width="100%">large brown bear</td>
-      <td style="text-align:center;" width="100%">large panda</td>
-      <td style="text-align:center;" width="100%">large dinosaur</td>
+      <td style="text-align:center;" width="33%">large brown bear</td>
+      <td style="text-align:center;" width="33%">large panda</td>
+      <td style="text-align:center;" width="33%">large dinosaur</td>
     </tr>
   </tbody>
 </table>
@@ -131,9 +131,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:95%;">
   <thead>
     <tr>
-      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
-      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
-      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
+      <td width="33%" style="text-align:center;">Original Video (Source Keyword)</th>
+      <td width="33%" style="text-align:center;">Edited Video 1 (Target Keyword)</th>
+      <td width="33%" style="text-align:center;">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
