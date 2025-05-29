@@ -106,9 +106,9 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 <table style="width:100%;">
   <thead>
     <tr>
-      <td style="text-align:center;" width="33%">Original Video (Source Keyword)</th>
-      <td style="text-align:center;" width="33%">Edited Video 1 (Target Keyword)</th>
-      <td style="text-align:center;" width="33%">Edited Video 2 (Target Keyword)</th>
+      <td style="text-align:center;" width="100%">Original Video (Source Keyword)</th>
+      <td style="text-align:center;" width="100%">Edited Video 1 (Target Keyword)</th>
+      <td style="text-align:center;" width="100%">Edited Video 2 (Target Keyword)</th>
     </tr>
   </thead>
   <tbody>
