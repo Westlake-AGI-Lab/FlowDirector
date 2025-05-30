@@ -11,7 +11,9 @@ easydict
 ftfy
 dashscope
 imageio-ffmpeg
-flash_attn
+# flash_attn
 gradio>=5.0.0
-# numpy==1.24.4
 kornia
+scikit-image==0.25.2
+scipy==1.15.2
+xfuser==0.4.3.post3

@@ -393,9 +393,7 @@ def edit(args):
             source_words=args.source_words,
             target_words=args.target_words,
             window_size=args.window_size,
-            decay_factor=args.decay_factor,
-            ref_path=args.ref_path,
-            visualize=args.visualize)
+            decay_factor=args.decay_factor)
 
     else:
         if args.prompt is None:

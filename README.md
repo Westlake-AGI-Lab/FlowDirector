@@ -68,7 +68,7 @@
 
 Download the **Wan2.1-T2V-1.3B** model checkpoints from their official sources (e.g., from the <a href="https://github.com/Wan-Video/Wan2.1">Wan2.1 GitHub</a> or <a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B">Hugging Face</a>). You will need to provide the path to the directory containing these checkpoints using the `--ckpt_dir` argument when running the editing script (see examples below).
 
-For instance, if you download them to `/root/autodl-tmp/Wan2.1-T2V-1.3B`, you will use `--ckpt_dir /root/autodl-tmp/Wan2.1-T2V-1.3B`.
+For instance, if you download them to `./checkpoints/Wan2.1-T2V-1.3B`, you will use `--ckpt_dir ./checkpoints/Wan2.1-T2V-1.3B`.
 
 
 ### Installation
@@ -80,8 +80,17 @@ For instance, if you download them to `/root/autodl-tmp/Wan2.1-T2V-1.3B`, you wi
     ```
 2.  Install dependencies:
     ```bash
+    conda create -n flowdirector python=3.12
+    conda activate flowdirector
+
     pip install -r requirements.txt
     ```
+3.  **(Optional) Install flash_attention for Accelerated Editing:**
+    We strongly recommend installing `flash_attention` to accelerate editing (**can be more than 5x faster**):
+    ```bash
+    pip install flash-attn --no-build-isolation
+    ```
+    Alternatively, you can check the official [flash_attention GitHub repository](https://github.com/Dao-AILab/flash-attention).
 
 ---
 
@@ -107,6 +116,15 @@ bash script_edit_multi_gpu.sh
 ```
 
 For detailed parameter explanations, please refer to the `edit.py` file.
+
+
+### Use Gradio Web Interface
+
+You can also use the Gradio web interface for editing videos, run:
+
+```bash
+python app.py --ckpt ./checkpoints/Wan2.1-T2V-1.3B
+```
 
 ---
 
