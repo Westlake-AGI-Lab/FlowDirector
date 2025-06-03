@@ -11,7 +11,7 @@
     <a href="chizhang@westlake.edu.cn"><strong>Chi Zhang</strong></a>    <br>
     <br>
         <a href="https://arxiv.org/abs/0000.00000"><img src='https://img.shields.io/badge/arXiv-0000.00000-b31b1b.svg'></a>
-        <a href='https://guangzhaoli.github.io/FlowDirector'><img src='https://img.shields.io/badge/Project_Page-FlowDirector-blue'></a>
+        <a href='https://flowdirector-edit.github.io'><img src='https://img.shields.io/badge/Project_Page-FlowDirector-blue'></a>
         <a href='https://huggingface.co/spaces/guangzhaoli/FlowDirector'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow'></a>
   </p>
 
