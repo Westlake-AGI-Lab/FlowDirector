@@ -7,9 +7,6 @@ import datetime
 import shutil
 import time # Moved import time to the top for global access
 import argparse
-import cv2
-import numpy as np
-import tempfile
 
 # --- Configuration ---
 # !!! IMPORTANT: Ensure this path is correct for your environment !!!
@@ -43,93 +40,6 @@ def generate_safe_filename_part(text, max_len=20):
     safe_text = "_".join(safe_text.split()) # Replace spaces with underscores
     return safe_text[:max_len]
 
-def preprocess_video(input_video_path, target_size=(832, 480)):
-    """
-    Preprocess video to ensure frame count is 4n+1 and resize to target resolution.
-    Returns: preprocessed video path, original resolution, and original frame count
-    """
-    # Open the video
-    cap = cv2.VideoCapture(input_video_path)
-    if not cap.isOpened():
-        raise ValueError(f"Could not open video file: {input_video_path}")
-    
-    # Get video properties
-    fps = cap.get(cv2.CAP_PROP_FPS)
-    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    original_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    original_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-    original_resolution = (original_width, original_height)
-    
-    print(f"Original video: {original_width}x{original_height}, {frame_count} frames, {fps} fps")
-    
-    # Calculate frames to keep (4n+1)
-    # Find the largest 4n+1 that is <= frame_count
-    frames_to_keep = frame_count
-    while (frames_to_keep - 1) % 4 != 0:
-        frames_to_keep -= 1
-    
-    frames_to_drop = frame_count - frames_to_keep
-    print(f"Adjusting frame count from {frame_count} to {frames_to_keep} (dropping {frames_to_drop} frames)")
-    
-    # Create temporary file for preprocessed video
-    temp_fd, temp_path = tempfile.mkstemp(suffix='.mp4')
-    os.close(temp_fd)
-    
-    # Set up video writer
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    out = cv2.VideoWriter(temp_path, fourcc, fps, target_size)
-    
-    # Process frames
-    frame_idx = 0
-    while frame_idx < frames_to_keep:
-        ret, frame = cap.read()
-        if not ret:
-            break
-        
-        # Resize frame
-        resized_frame = cv2.resize(frame, target_size, interpolation=cv2.INTER_AREA)
-        out.write(resized_frame)
-        frame_idx += 1
-    
-    # Release resources
-    cap.release()
-    out.release()
-    
-    return temp_path, original_resolution, frame_count
-
-def postprocess_video(input_video_path, output_path, original_resolution):
-    """
-    Postprocess video to resize back to original resolution.
-    """
-    # Open the edited video
-    cap = cv2.VideoCapture(input_video_path)
-    if not cap.isOpened():
-        raise ValueError(f"Could not open video file: {input_video_path}")
-    
-    # Get video properties
-    fps = cap.get(cv2.CAP_PROP_FPS)
-    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    
-    print(f"Resizing edited video back to original resolution: {original_resolution[0]}x{original_resolution[1]}")
-    
-    # Set up video writer
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    out = cv2.VideoWriter(output_path, fourcc, fps, original_resolution)
-    
-    # Process frames
-    while True:
-        ret, frame = cap.read()
-        if not ret:
-            break
-        
-        # Resize frame back to original resolution
-        resized_frame = cv2.resize(frame, original_resolution, interpolation=cv2.INTER_AREA)
-        out.write(resized_frame)
-    
-    # Release resources
-    cap.release()
-    out.release()
-
 def run_video_edit(source_video_path, source_prompt, target_prompt, source_words, target_words, 
                    omega_value, n_max_value, n_avg_value, progress=gr.Progress(track_tqdm=True)):
     if not source_video_path:
@@ -144,66 +54,53 @@ def run_video_edit(source_video_path, source_prompt, target_prompt, source_words
     if not target_words:
         raise gr.Error("Please provide target words.")
 
-    preprocessed_video = None
-    temp_output_path = None
+    progress(0, desc="Preparing for video editing...")
+    print(f"Source video received at: {source_video_path}")
+    print(f"Omega value: {omega_value}")
+    print(f"N_max value: {n_max_value}")
+    print(f"N_avg value: {n_avg_value}")
+
+    worse_avg_value = n_avg_value // 2
+    print(f"Calculated Worse_avg value: {worse_avg_value}")
+
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    src_words_fn = generate_safe_filename_part(source_words)
+    tar_words_fn = generate_safe_filename_part(target_words)
     
+    output_filename_base = f"{timestamp}_{src_words_fn}_to_{tar_words_fn}_omega{omega_value}_nmax{n_max_value}_navg{n_avg_value}"
+    output_video_path = os.path.join(OUTPUT_DIR, f"{output_filename_base}.mp4")
+
+    cmd = [
+        PYTHON_EXECUTABLE, EDIT_SCRIPT_PATH,
+        "--task", "t2v-1.3B",
+        "--size", "832*480",
+        "--base_seed", "42",
+        "--ckpt_dir", CKPT_DIR,
+        "--sample_solver", "unipc",
+        "--source_video_path", source_video_path,
+        "--source_prompt", source_prompt,
+        "--source_words", source_words, # Pass as is, even if empty
+        "--prompt", target_prompt,
+        "--target_words", target_words,
+        "--sample_guide_scale", "3.5",
+        "--tar_guide_scale", "10.5",
+        "--sample_shift", "12",
+        "--sample_steps", "50",
+        "--n_max", str(n_max_value),
+        "--n_min", "0", 
+        "--n_avg", str(n_avg_value),
+        "--worse_avg", str(worse_avg_value), 
+        "--omega", str(omega_value),
+        "--window_size", "11",
+        "--decay_factor", "0.25",
+        "--frame_num", "41",
+        "--save_file", output_video_path
+    ]
+
+    print(f"Executing command: {' '.join(cmd)}")
+    progress(0.1, desc="Starting video editing process...")
+
     try:
-        progress(0, desc="Preprocessing video...")
-        print(f"Source video received at: {source_video_path}")
-        
-        # Preprocess video: adjust frames to 4n+1 and resize to 832x480
-        preprocessed_video, original_resolution, original_frame_count = preprocess_video(source_video_path)
-        print(f"Preprocessed video saved to: {preprocessed_video}")
-        
-        progress(0.05, desc="Preparing for video editing...")
-        print(f"Omega value: {omega_value}")
-        print(f"N_max value: {n_max_value}")
-        print(f"N_avg value: {n_avg_value}")
-
-        worse_avg_value = n_avg_value // 2
-        print(f"Calculated Worse_avg value: {worse_avg_value}")
-
-        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        src_words_fn = generate_safe_filename_part(source_words)
-        tar_words_fn = generate_safe_filename_part(target_words)
-        
-        output_filename_base = f"{timestamp}_{src_words_fn}_to_{tar_words_fn}_omega{omega_value}_nmax{n_max_value}_navg{n_avg_value}"
-        final_output_path = os.path.join(OUTPUT_DIR, f"{output_filename_base}.mp4")
-        
-        # Create a temporary output path for the edited video before postprocessing
-        temp_fd, temp_output_path = tempfile.mkstemp(suffix='.mp4')
-        os.close(temp_fd)
-
-        cmd = [
-            PYTHON_EXECUTABLE, EDIT_SCRIPT_PATH,
-            "--task", "t2v-1.3B",
-            "--size", "832*480",
-            "--base_seed", "42",
-            "--ckpt_dir", CKPT_DIR,
-            "--sample_solver", "unipc",
-            "--source_video_path", preprocessed_video,  # Use preprocessed video
-            "--source_prompt", source_prompt,
-            "--source_words", source_words, # Pass as is, even if empty
-            "--prompt", target_prompt,
-            "--target_words", target_words,
-            "--sample_guide_scale", "3.5",
-            "--tar_guide_scale", "10.5",
-            "--sample_shift", "12",
-            "--sample_steps", "50",
-            "--n_max", str(n_max_value),
-            "--n_min", "0", 
-            "--n_avg", str(n_avg_value),
-            "--worse_avg", str(worse_avg_value), 
-            "--omega", str(omega_value),
-            "--window_size", "11",
-            "--decay_factor", "0.25",
-            "--frame_num", "41",
-            "--save_file", temp_output_path  # Save to temp path
-        ]
-
-        print(f"Executing command: {' '.join(cmd)}")
-        progress(0.1, desc="Starting video editing process...")
-
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, bufsize=1, universal_newlines=True)
         
         # Simulate progress
@@ -215,21 +112,19 @@ def run_video_edit(source_video_path, source_prompt, target_prompt, source_words
 
         stdout, stderr = process.communicate() 
 
+        progress(0.9, desc="Finalizing video...")
+
         if process.returncode != 0:
             print(f"Error during video editing:\nStdout:\n{stdout}\nStderr:\n{stderr}")
             raise gr.Error(f"Video editing failed. Stderr: {stderr[:500]}")
         
-        print(f"Video editing successful. Temp output at: {temp_output_path}")
-        if not os.path.exists(temp_output_path):
-            print(f"Error: Output file {temp_output_path} was not created.")
+        print(f"Video editing successful. Output at: {output_video_path}")
+        if not os.path.exists(output_video_path):
+            print(f"Error: Output file {output_video_path} was not created.")
             raise gr.Error(f"Output file not found, though script reported success. Stdout: {stdout}")
         
-        # Postprocess video: resize back to original resolution
-        progress(0.95, desc="Postprocessing video...")
-        postprocess_video(temp_output_path, final_output_path, original_resolution)
-        
         progress(1, desc="Video ready!")
-        return final_output_path
+        return output_video_path
 
     except FileNotFoundError:
         progress(1, desc="Error")
@@ -239,20 +134,6 @@ def run_video_edit(source_video_path, source_prompt, target_prompt, source_words
         progress(1, desc="Error")
         print(f"An unexpected error occurred: {e}")
         raise gr.Error(f"An unexpected error: {str(e)}")
-    finally:
-        # Clean up temporary files
-        if preprocessed_video and os.path.exists(preprocessed_video):
-            try:
-                os.remove(preprocessed_video)
-                print(f"Cleaned up preprocessed video: {preprocessed_video}")
-            except:
-                pass
-        if temp_output_path and os.path.exists(temp_output_path):
-            try:
-                os.remove(temp_output_path)
-                print(f"Cleaned up temp output: {temp_output_path}")
-            except:
-                pass
 
 # --- Gradio UI Definition ---
 
@@ -317,7 +198,88 @@ if not examples_data:
     print(f"Warning: No example videos found in '{VIDEO_EXAMPLES_DIR}'. Examples section will be empty or not show.")
 
 
-with gr.Blocks(theme=gr.themes.Soft(), css=".gradio-container {max-width: 1400px !important; margin: auto !important;}") as demo:
+with gr.Blocks(theme=gr.themes.Soft(), css="""
+    /* Main container - maximize width and improve spacing */
+    .gradio-container {
+        max-width: 98% !important; 
+        width: 98% !important; 
+        margin: 0 auto !important; 
+        padding: 20px !important;
+        min-height: 100vh !important;
+    }
+    
+    /* All containers should use full width */
+    .contain, .container {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    /* Remove default padding from main wrapper */
+    .main, .wrap, .panel {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    /* Improve spacing for components */
+    .gap, .form {
+        gap: 15px !important;
+    }
+    
+    /* Make all components full width */
+    #component-0, .block {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    
+    /* Better padding for groups */
+    .group {
+        padding: 20px !important;
+        margin-bottom: 15px !important;
+        border-radius: 8px !important;
+    }
+    
+    /* Make rows and columns use full space with better gaps */
+    .row {
+        gap: 30px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    /* Improve column spacing */
+    .column {
+        padding: 0 10px !important;
+    }
+    
+    /* Better video component sizing */
+    .video-container {
+        width: 100% !important;
+    }
+    
+    /* Textbox improvements */
+    .textbox, .input-field {
+        width: 100% !important;
+    }
+    
+    /* Button styling */
+    .primary {
+        width: 100% !important;
+        padding: 12px !important;
+        font-size: 16px !important;
+        margin-top: 20px !important;
+    }
+    
+    /* Examples section spacing */
+    .examples {
+        margin-top: 30px !important;
+        padding: 20px !important;
+    }
+    
+    /* Accordion improvements */
+    .accordion {
+        margin: 15px 0 !important;
+    }
+    """) as demo:
     gr.Markdown(
         """
         <h1 style="text-align: center; font-size: 2.5em;">🪄 FlowDirector Video Edit</h1>
@@ -329,10 +291,10 @@ with gr.Blocks(theme=gr.themes.Soft(), css=".gradio-container {max-width: 1400px
     )
 
     with gr.Row():
-        with gr.Column(scale=3):  # Input column - increased scale for better width utilization
+        with gr.Column(scale=5):  # Input column - increased scale for better space usage
             with gr.Group():
                 gr.Markdown("### 🎬 Source Material")
-                source_video_input = gr.Video(label="Upload Source Video", height=480)
+                source_video_input = gr.Video(label="Upload Source Video", height=540)
                 source_prompt_input = gr.Textbox(
                     label="Source Prompt",
                     placeholder="Describe the original video content accurately.",
@@ -373,9 +335,9 @@ with gr.Blocks(theme=gr.themes.Soft(), css=".gradio-container {max-width: 1400px
 
             submit_button = gr.Button("✨ Generate Edited Video", variant="primary")
 
-        with gr.Column(scale=2):  # Output column - increased scale for better balance
+        with gr.Column(scale=4):  # Output column - increased scale for better proportion
             gr.Markdown("### 🖼️ Edited Video Output")
-            output_video = gr.Video(label="Result", height=480, show_label=False)
+            output_video = gr.Video(label="Result", height=540, show_label=False)
 
 
     if examples_data: # Only show examples if some were successfully loaded
