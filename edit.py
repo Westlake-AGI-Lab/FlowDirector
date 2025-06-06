@@ -458,7 +458,7 @@ def edit(args):
             formatted_prompt = args.prompt.replace(" ", "_").replace("/",
                                                                      "_")[:30]
             suffix = '.png' if "t2i" in args.task else '.mp4'
-            args.save_file = f"videos/{formatted_time}_{args.source_words.replace(" ", "_").replace("/","_")}_{args.target_words.replace(" ", "_").replace("/","_")}_n{args.n_avg}_w{args.worse_avg}_omega{args.omega}_s{args.base_seed}" + suffix
+            args.save_file = f"videos/{formatted_time}_{args.source_words.replace(' ', '_').replace('/', '_')}_{args.target_words.replace(' ', '_').replace('/', '_')}_n{args.n_avg}_w{args.worse_avg}_omega{args.omega}_s{args.base_seed}" + suffix
 
         if "t2i" in args.task:
             logging.info(f"Saving generated image to {args.save_file}")

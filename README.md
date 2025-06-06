@@ -10,9 +10,9 @@
     ·
     <a href="chizhang@westlake.edu.cn"><strong>Chi Zhang</strong></a>    <br>
     <br>
-        <a href="https://arxiv.org/abs/0000.00000"><img src='https://img.shields.io/badge/arXiv-0000.00000-b31b1b.svg'></a>
+        <a href="https://arxiv.org/abs/2506.05046"><img src='https://img.shields.io/badge/arXiv-2506.05046-b31b1b.svg'></a>
         <a href='https://flowdirector-edit.github.io'><img src='https://img.shields.io/badge/Project_Page-FlowDirector-blue'></a>
-        <a href='https://huggingface.co/spaces/guangzhaoli/FlowDirector'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow'></a>
+        <a href='https://huggingface.co/spaces/Westlake-AGI-Lab/FlowDirector'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow'></a>
   </p>
 
 <p align="center">
@@ -466,12 +466,11 @@ FlowDirector achieves superior results across various editing tasks. Below are s
 If you find FlowDirector useful for your research, please cite our paper:
 
 ```bibtex
-@inproceedings{Li2023FlowDirector,
-  title     = {FlowDirector: Training-Free Flow Steering for Precise Text-to-Video Editing},
-  author    = {Guangzhao Li and Yanming Yang and Chenxi Song and Chi Zhang},
-  booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
-  year      = {2023},
-  url       = {https://arxiv.org/abs/2310.08465}
+@article{li2025flowdirector0,
+  title   = {FlowDirector: Training-Free Flow Steering for Precise Text-to-Video Editing},
+  author  = {Guangzhao Li and Yanming Yang and Chenxi Song and Chi Zhang},
+  year    = {2025},
+  journal = {arXiv preprint arXiv: 2506.05046}
 }
 ```
 
