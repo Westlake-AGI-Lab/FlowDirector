@@ -716,7 +716,7 @@ class WanT2V:
         torch.manual_seed(seed)
 
         # 加载源视频潜在表示和参考图像
-        x_src = self.load_video_frames(source_video_path)
+        x_src = self.load_video_frames(source_video_path, size=size)
         C_latent, F_latent, H_latent, W_latent = x_src.shape
 
         # Validate TMD parameters
