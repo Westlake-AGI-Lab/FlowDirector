@@ -22,7 +22,11 @@
 </p>
 
 
+
 ---
+
+> **Version Notice:** This repository provides the **V1** implementation of **FlowDirector**.  
+> The **V2** version (with additional updates) will be **open-sourced soon**.
 
 
 ## 📄 Abstract
